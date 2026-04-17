@@ -16,4 +16,34 @@ from employee*/
 --select substring('I am the king of the world' from 10 for 4)
 --select left('I am the king of the world', 13)
 --select right('I am the king of the world', 9)
-select name, length(name) from employee
+--select name, length(name) from employee
+
+--String FUnction : Replace
+--Select replace('SQL Starter Course', 'Starter', 'Beginner')
+--Select Replace(email, 'randatmail.com', 'sakila.org') as email from public.employee
+
+
+--String Function : Repeat function
+--Select repeat('Hi',5) as repeat_greating
+--Select id, CONCAT(Repeat('0', 5-LENGTH(CAST(id as text))), id) From employee
+--Select LPAD(id::text, 5, '0') From employee
+
+--Upper, lower, Initcap function
+/*Select name, upper(name) from employee
+Select name, lower(name) from employee
+select scientific, INITCAP(scientific) from animal_names*/
+
+--RTRIM Function
+--SELECT RTRIM('--- SQL Course---','-')
+--SELECT RTRIM(' SQL Course')
+
+--LTRIM Function
+--SELECT LTRIM('--- SQL COURSE---', '-')
+
+--TRIM FUNCTION : Remove the longest string containing a character from the start, end, or both
+--TRIM(LEADING/TRAILING/BOTH trim_character from string)
+--Leading : remove characters from the left
+--Trailing : remove from the right
+--Both : remove characters from both ends of the string
+Select
+SELECT TRIM()
