@@ -45,5 +45,9 @@ select scientific, INITCAP(scientific) from animal_names*/
 --Leading : remove characters from the left
 --Trailing : remove from the right
 --Both : remove characters from both ends of the string
-Select
-SELECT TRIM()
+--Select TRIM(BOTH '-' FROM '---SQL Course---')
+
+--LIKE OPERATOR 
+--WILDCARDS : % (Matches any sequence of zero more characters) & _(matches any single character).
+--SELECT * FROM animal_names WHERE common like '%cat%'
+Select * from animal_names where common like 'Pu__'
