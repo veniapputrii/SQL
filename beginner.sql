@@ -56,4 +56,5 @@ select scientific, INITCAP(scientific) from animal_names*/
 --SELECT Now():: DATE
 --Select current_date;
 --SELECT name, dob, AGE(CURRENT_DATE,dob) from employee
-SELECT firstname, logtime from log_timein where logtime between '10:00' and '12:00'
+--SELECT firstname, logtime from log_timein where logtime between '10:00' and '12:00'
+SELECT TO_CHAR(CURRENT_DATE, 'Month dd, yyyy')
