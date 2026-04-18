@@ -50,4 +50,10 @@ select scientific, INITCAP(scientific) from animal_names*/
 --LIKE OPERATOR 
 --WILDCARDS : % (Matches any sequence of zero more characters) & _(matches any single character).
 --SELECT * FROM animal_names WHERE common like '%cat%'
-Select * from animal_names where common like 'Pu__'
+--Select * from animal_names where common like 'Pu__'
+
+--Date & Time
+--SELECT Now():: DATE
+--Select current_date;
+--SELECT name, dob, AGE(CURRENT_DATE,dob) from employee
+SELECT firstname, logtime from log_timein where logtime between '10:00' and '12:00'
