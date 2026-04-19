@@ -60,8 +60,12 @@ select scientific, INITCAP(scientific) from animal_names*/
 --SELECT TO_CHAR(CURRENT_DATE, 'Month dd, yyyy')
 --Date Time Identifier
 --SELECT date_part('dow', now()) as dow, date_part('doy', now()) as doy;
+
 --EXTRACT
-SELECT extract(dow from now()) as dow, extract(doy from now()) as doy;
+--SELECT extract(dow from now()) as dow, extract(doy from now()) as doy;
+
+--DAte_TRUNC FUNCTION
+SELECT logtime, date_trunc('hour', logtime) from log_timein
 
 
 
