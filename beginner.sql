@@ -68,8 +68,8 @@ select scientific, INITCAP(scientific) from animal_names*/
 --SELECT logtime, date_trunc('hour', logtime) from log_timein
 
 --INTERVAL Data Type
-Select now(), now() - INTERVAL '6 hours' as sixhoursbefore;
-
+--Select now(), now() - INTERVAL '6 hours' as sixhoursbefore;
+SELECT AGE(dob) from employee
 
 
 
