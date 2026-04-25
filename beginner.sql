@@ -69,7 +69,15 @@ select scientific, INITCAP(scientific) from animal_names*/
 
 --INTERVAL Data Type
 --Select now(), now() - INTERVAL '6 hours' as sixhoursbefore;
-SELECT AGE(dob) from employee
+
+-- MAKE_DATE
+Select make_data(salesyear, salesday) from supermarket_sales
+
+
+
+
+
+
 
 
 
