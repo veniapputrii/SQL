@@ -71,8 +71,8 @@ select scientific, INITCAP(scientific) from animal_names*/
 --Select now(), now() - INTERVAL '6 hours' as sixhoursbefore;
 
 -- MAKE_DATE
-Select make_data(salesyear, salesday) from supermarket_sales
-
+--Select make_data(salesyear, salesday) from supermarket_sales
+SELECT TO_TIMESTAMP('04 03 23 14:45', 'MM DD YY HH24:MI');
 
 
 
