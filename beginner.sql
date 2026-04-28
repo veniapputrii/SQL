@@ -75,11 +75,10 @@ select scientific, INITCAP(scientific) from animal_names*/
 --SELECT TO_TIMESTAMP('04 03 23 14:45', 'MM DD YY HH24:MI');
 
 --CONVERTING
-Select to_date('2023 Apr 03', 'yyyy Mon DD')
-
+--Select to_date('2023 Apr 03', 'yyyy Mon DD')
 
 --TO_NUMBER : Convert string to numeric
-
+Select to_number('$1, 234, 567.89', 'L9G999G999.99');
 
 
 
