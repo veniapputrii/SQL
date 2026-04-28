@@ -76,6 +76,8 @@ select scientific, INITCAP(scientific) from animal_names*/
 
 --CONVERTING
 Select to_date('2023 Apr 03', 'yyyy Mon DD')
+
+
 --TO_NUMBER : Convert string to numeric
 
 
