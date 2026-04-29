@@ -81,7 +81,8 @@ select scientific, INITCAP(scientific) from animal_names*/
 --Select to_number('$1, 234, 567.89', 'L9G999G999.99');
 
 --CAST
-SELECT CAST('Dec 12, 2023' as DATE);
+--SELECT CAST('Dec 12, 2023' as DATE);
+SELECT CAST('12-December 2023' as DATE);
 
 
 
