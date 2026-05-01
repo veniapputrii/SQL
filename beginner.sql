@@ -65,7 +65,7 @@ select scientific, INITCAP(scientific) from animal_names*/
 --SELECT extract(dow from now()) as dow, extract(doy from now()) as doy;
 
 --DAte_TRUNC FUNCTION
---SELECT logtime, date_trunc('hour', logtime) from log_timein
+--SELECT logtime, date_trunc('minutes', logtime) from log_timein
 
 --INTERVAL Data Type
 --Select now(), now() - INTERVAL '6 hours' as sixhoursbefore;
