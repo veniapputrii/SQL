@@ -84,10 +84,13 @@ select scientific, INITCAP(scientific) from animal_names*/
 --SELECT CAST('Dec 12, 2023' as DATE);
 --SELECT CAST('12-December 2023' as DATE);
 
-SELECT * FROM public.zoo_2
+--JOIN
+--SELECT * FROM public.zoo_2
+--ORDER BY id ASC
+
+--INNER JOIN
+SELECT * FROM public.zoo_1
 ORDER BY id ASC
-
-
 
 
 
