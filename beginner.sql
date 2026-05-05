@@ -73,7 +73,7 @@ select scientific, INITCAP(scientific) from animal_names*/
 -- MAKE_DATE
 --Select make_data(salesyear, salesday) from supermarket_sales
 --SELECT TO_TIMESTAMP('04 03 23 14:45', 'MM DD YY HH24:MI');
-
+https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --CONVERTING
 --Select to_date('2023 Apr 03', 'yyyy Mon DD')
 
@@ -91,16 +91,17 @@ select scientific, INITCAP(scientific) from animal_names*/
 --INNER JOIN
 --SELECT * FROM public.zoo_1
 --ORDER BY id ASC
-SELECT
-zoo_1.id id_a,
-zoo_1.animal animal_a,
-zoo_2.id id_b,
-zoo_2.animal animal_b
 
-FROM
-zoo_1
-INNER JOIN zoo_2 ON zoo_1.animal = zoo_2.animal;
+--SELECT
+--zoo_1.id id_a,
+--zoo_1.animal animal_a,
+--zoo_2.id id_b,
+--zoo_2.animal animal_b
+--FROM
+--zoo_1
+--INNER JOIN zoo_2 ON zoo_1.animal = zoo_2.animal;
 
+--LEFT OUTER JOIN
 
 
 
