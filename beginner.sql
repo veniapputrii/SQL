@@ -102,13 +102,13 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --INNER JOIN zoo_2 ON zoo_1.animal = zoo_2.animal;
 
 --LEFT OUTER JOIN
-zoo_1.id,
-zoo_1.animal, 
-zoo_2.id,
-zoo_2.animal
-FROM
-zoo_1
-LEFT JOIN zoo_2 on zoo_1.animal = zoo_2.animal;
+--zoo_1.id,
+--zoo_1.animal, 
+--zoo_2.id,
+--zoo_2.animal
+--FROM
+--zoo_1
+--LEFT JOIN zoo_2 on zoo_1.animal = zoo_2.animal;
 
 
 
