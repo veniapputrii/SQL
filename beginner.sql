@@ -110,13 +110,23 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --zoo_1
 --LEFT JOIN zoo_2 on zoo_1.animal = zoo_2.animal;
 
-SELECT
-zoo_2.id,
-zoo_2.animal,
-zoo_1.id,
-zoo_1.animal
+--SELECT
+--zoo_2.id,
+--zoo_2.animal,
+--zoo_1.id,
+--zoo_1.animal
 
+--FROM
+--zoo_1
+--RIGHT JOIN zoo_2 on zoo_1.animal = zoo_2.animal;
+
+
+--FULL OUTER JOIN
+SELECT
+zoo_1.id,
+zoo_1.animal,
+zoo_2.id,
+zoo_2.animal
 FROM
 zoo_1
-RIGHT JOIN zoo_2 on zoo_1.animal = zoo_2.animal;
-
+FULL JOIN zoo_2 on zoo_1.animal = zoo_2.animal;
