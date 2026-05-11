@@ -122,11 +122,13 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 
 
 --FULL OUTER JOIN
-SELECT
-zoo_1.id,
-zoo_1.animal,
-zoo_2.id,
-zoo_2.animal
-FROM
-zoo_1
-FULL JOIN zoo_2 on zoo_1.animal = zoo_2.animal;
+--SELECT
+--zoo_1.id,
+--zoo_1.animal,
+--zoo_2.id,
+--zoo_2.animal
+--FROM
+--zoo_1
+--FULL JOIN zoo_2 on zoo_1.animal = zoo_2.animal;
+
+SELECT * FROM public.shoporder
