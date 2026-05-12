@@ -131,4 +131,4 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --zoo_1
 --FULL JOIN zoo_2 on zoo_1.animal = zoo_2.animal;
 
---SELECT * FROM public.shoporder
+--SELECT * FROM public.customer
