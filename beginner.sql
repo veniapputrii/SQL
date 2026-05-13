@@ -131,5 +131,6 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --zoo_1
 --FULL JOIN zoo_2 on zoo_1.animal = zoo_2.animal;
 
-SELECT * FROM customer NATURAL  JOIN shoporder
+--SELECT * FROM customer NATURAL  JOIN shoporder
 
+SELECT * FROM customer INNER JOIN shoporder ON customer.orderid = shoporder.orderid 
