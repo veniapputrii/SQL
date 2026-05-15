@@ -134,8 +134,11 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --SELECT * FROM customer NATURAL  JOIN shoporder
 
 --SELECT * FROM customer INNER JOIN shoporder ON customer.orderid = shoporder.orderid 
-SELECT a.employeename,
-b.employeename managername
-FROM 
-employee_roster a
-INNER JOIN employee_roster b ON b.empployeeid = a,employeeid
+--SELECT a.employeename,
+--b.employeename managername
+--FROM 
+--employee_roster a
+--INNER JOIN employee_roster b ON b.empployeeid = a,employeeid
+
+SELECT max(id) FROM employee
+SELECT * FROM employee where id = (select max(id) from employee)
