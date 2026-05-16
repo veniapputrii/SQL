@@ -140,5 +140,7 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --employee_roster a
 --INNER JOIN employee_roster b ON b.empployeeid = a,employeeid
 
-SELECT max(id) FROM employee
-SELECT * FROM employee where id = (select max(id) from employee)
+--SELECT max(id) FROM employee
+--SELECT * FROM employee where id = (select max(id) from employee)
+
+SELECT first_name, last_name, salary,(select avg(salary) from employee) as avg_salary from employee
