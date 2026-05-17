@@ -143,4 +143,7 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --SELECT max(id) FROM employee
 --SELECT * FROM employee where id = (select max(id) from employee)
 
-SELECT first_name, last_name, salary,(select avg(salary) from employee) as avg_salary from employee
+--SELECT first_name, last_name, salary,(select avg(salary) from employee) as avg_salary from employee
+
+SELECT max(id) from employee
+select * from employee where id = (select id from employee)
