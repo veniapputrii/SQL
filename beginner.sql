@@ -149,6 +149,9 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --select * from employee where id = (select id from employee)
 
 --SELECT order_id, order_date, quantity, unit_price, total from orders where employee_id in (select id from employee where departmenet = 'sales')
-SELECT order_table.*,employee.name
-from(select order_id,order_date, shipment_date, quantity, unit_price, total, employee_id from orders where total <>0) as order_table
-left join employee on order_table.employee_id = employee.id
+--SELECT order_table.*,employee.name
+--from(select order_id,order_date, shipment_date, quantity, unit_price, total, employee_id from orders where total <>0) as order_table
+--left join employee on order_table.employee_id = employee.id
+
+Select first_name, last_name, salary, department, (select avg(salary)
+  from employee e2 where e2.department = e1.department) as avg_salary from employee e1 order by department.
