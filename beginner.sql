@@ -153,5 +153,8 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --from(select order_id,order_date, shipment_date, quantity, unit_price, total, employee_id from orders where total <>0) as order_table
 --left join employee on order_table.employee_id = employee.id
 
-Select first_name, last_name, salary, department, (select avg(salary)
-  from employee e2 where e2.department = e1.department) as avg_salary from employee e1 order by department.
+--Select first_name, last_name, salary, department, (select avg(salary)
+ -- from employee e2 where e2.department = e1.department) as avg_salary from employee e1 order by department.
+
+Select order_id, order_date, quantity, unit_price,total,
+(select max(order_id) from orders o2 where o2.order_id < o1.order_id) previous_order_id from orders o1 order by order_id
