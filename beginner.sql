@@ -145,8 +145,7 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 
 --SELECT first_name, last_name, salary,(select avg(salary) from employee) as avg_salary from employee
 
---SELECT max(id) from employee
---select * from employee where id = (select id from employee)
+
 
 --SELECT order_id, order_date, quantity, unit_price, total from orders where employee_id in (select id from employee where departmenet = 'sales')
 --SELECT order_table.*,employee.name
@@ -156,7 +155,7 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --Select first_name, last_name, salary, department, (select avg(salary)
  -- from employee e2 where e2.department = e1.department) as avg_salary from employee e1 order by department.
 
---Select order_id, order_date, quantity, unit_price,total,
+--select order_id, order_date, quantity, unit_price,total,
 --(select max(order_id) from orders o2 where o2.order_id < o1.order_id) previous_order_id from orders o1 order by order_id
 
 Select order_date, sum(total) total, (select sum(total) from orders where order_date <=o1.order_date) running_total
