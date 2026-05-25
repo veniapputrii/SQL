@@ -161,6 +161,12 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --Select order_date, sum(total) total, (select sum(total) from orders where order_date <=o1.order_date) running_total
 --from orders o1 group by order_date order by order_date
 
---Operators
-SELECT * From public.zoo_2
-Order by id ASC
+--Operators - Ascending
+--SELECT * From public.zoo_2
+--Order by id ASC
+
+-- UNION
+Select * from zoo_1
+UNION
+Select * from zoo_2
+ORDER BY ID
