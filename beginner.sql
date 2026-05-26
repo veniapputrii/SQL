@@ -167,6 +167,6 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 
 -- UNION
 Select * from zoo_1
-UNION
+UNION ALL
 Select * from zoo_2
 ORDER BY ID
