@@ -166,7 +166,12 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --Order by id ASC
 
 -- UNION
-Select * from zoo_1
-UNION ALL
-Select * from zoo_2
-ORDER BY ID
+--Select * from zoo_1
+--UNION ALL
+--Select * from zoo_2
+--ORDER BY ID
+
+--INTERSECT
+SELECT * FROM zoo_1
+INTERSECT 
+Select * From zoo_2
