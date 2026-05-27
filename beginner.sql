@@ -172,6 +172,12 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --ORDER BY ID
 
 --INTERSECT
-SELECT * FROM zoo_1
-INTERSECT 
-Select * From zoo_2
+--SELECT * FROM zoo_1
+--INTERSECT 
+--Select * From zoo_2
+
+--EXCEPT
+select * from zoo_1
+except
+select * from zoo_2
+order by id
