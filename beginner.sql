@@ -177,7 +177,12 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --Select * From zoo_2
 
 --EXCEPT
-select * from zoo_1
-except
-select * from zoo_2
-order by id
+--select * from zoo_1
+--except
+--select * from zoo_2
+--order by id
+
+--view
+CREATE view customerorder as
+select s.subcategory, s.quantity, c.customername from shoporder s
+inner join customer c on s.orderid = c.orderid
