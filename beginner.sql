@@ -183,6 +183,15 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --order by id
 
 --view
-CREATE view customerorder as
-select s.subcategory, s.quantity, c.customername from shoporder s
-inner join customer c on s.orderid = c.orderid
+--CREATE view customerorder as
+--select s.subcategory, s.quantity, c.customername from shoporder s
+--inner join customer c on s.orderid = c.orderid
+
+--Window functions
+SELECT restaurantname, sales,
+RANK() OVER (ORDER BY sales DESC)
+FROM restaurant
+
+SELECT restaurantname, state, mealsserved, 
+RANK() over (partition by  state order by mealsserved desc)
+from restaurant
