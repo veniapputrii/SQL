@@ -188,10 +188,15 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --inner join customer c on s.orderid = c.orderid
 
 --Window functions
-SELECT restaurantname, sales,
-RANK() OVER (ORDER BY sales DESC)
-FROM restaurant
+--SELECT restaurantname, sales,
+--RANK() OVER (ORDER BY sales DESC)
+--FROM restaurant
 
+--SELECT restaurantname, state, mealsserved, 
+--RANK() over (partition by  state order by mealsserved desc)
+--from restaurant
+
+--DENSE RANK
 SELECT restaurantname, state, mealsserved, 
-RANK() over (partition by  state order by mealsserved desc)
+DENSE_RANK() over (partition by  state order by mealsserved desc)
 from restaurant
