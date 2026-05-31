@@ -197,6 +197,11 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --from restaurant
 
 --DENSE RANK
-SELECT restaurantname, state, mealsserved, 
-DENSE_RANK() over (partition by  state order by mealsserved desc)
-from restaurant
+--SELECT restaurantname, state, mealsserved, 
+--DENSE_RANK() over (partition by  state order by mealsserved desc)
+--from restaurant
+
+--ROW_NUMBER
+select *,
+row_number() over(order_by restaurantname asc)
+from restaurants
