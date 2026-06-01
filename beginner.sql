@@ -202,6 +202,11 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --from restaurant
 
 --ROW_NUMBER
-select *,
-row_number() over(order_by restaurantname asc)
+--select *,
+--row_number() over(order_by restaurantname asc)
+--from restaurants
+
+--NTILE (can't we do a customer segmentation with NTILE?)
+SELECT restaurantsname, sales,
+NTILE(3) OVER (ORDER by sales DESC) salesgroup
 from restaurants
