@@ -207,6 +207,11 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --from restaurants
 
 --NTILE (can't we do a customer segmentation with NTILE?)
-SELECT restaurantsname, sales,
-NTILE(3) OVER (ORDER by sales DESC) salesgroup
-from restaurants
+--SELECT restaurantsname, sales,
+--NTILE(3) OVER (ORDER by sales DESC) salesgroup
+--from restaurants
+
+--DML (Data manipulation language)
+INSERT INTO EMployee(id, first_name, last_name)
+ VALUES (1001, 'John', 'Doe');
+ 
