@@ -211,11 +211,11 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --NTILE(3) OVER (ORDER by sales DESC) salesgroup
 --from restaurants
 
---DML (Data manipulation language)
+--DML (Data manipulation language) --
 --INSERT INTO EMployee(id, first_name, last_name)
 -- VALUES (1001, 'John', 'Doe');
 --select into employee( id, name, first_name, last_name, gender, email, phone, occupation, salary, marital_status, dob, department)
 --select id, name, first_name, last_name, gender, email, phone, occupation, salary, marital_status, dob, department, from temp_employee
-
-insert into employee(id, first_name, last_name)
-values(1002, 'Lana', 'De ray'), (1293, 'Dine', 'maroe');
+--insert into employee(id, first_name, last_name)
+--values(1002, 'Lana', 'De ray'), (1293, 'Dine', 'maroe');
+--Insert * from employee where id = 1002
