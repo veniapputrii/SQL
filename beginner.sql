@@ -219,3 +219,16 @@ https://github.com/veniapputrii/SQL/edit/main/beginner.sql
 --insert into employee(id, first_name, last_name)
 --values(1002, 'Lana', 'De ray'), (1293, 'Dine', 'maroe');
 --Insert * from employee where id = 1002
+
+--UPDATE
+INSERT * FROM EMPLOYEE WHERE ID = 1002
+UPDATE employee
+SET name = 'Mary Lamb', gender = 'Female', email= 'masld@gmail.com', phone = 456789023, occupation ='Analyst',
+salary= 8200, marital_status ='Single', dob='1999-10-02', department='IT'
+where id = 1002
+
+-- DELETE
+DELETE * From employee where id = 1002
+
+--TRUNCATE
+TRUNCATE table employee;
