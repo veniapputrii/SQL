@@ -257,3 +257,13 @@ into enrollees
 from students;
 raise notice 'the number of enrolees is %';
 end sample_block1 $$;
+
+--CONTROL STRUCTURES
+DO $$
+DECLARE
+sales double precision := 0.00;
+KPI double precision := 10000.0;
+BEGIN
+SELECT sum(total) into sales from supermarket_sales
+IF sales < KPI then
+raise notice 'sales are below KPI : %', sales;
