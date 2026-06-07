@@ -22,17 +22,7 @@ from employee*/
 --Select replace('SQL Starter Course', 'Starter', 'Beginner')
 --Select Replace(email, 'randatmail.com', 'sakila.org') as email from public.employee
 
---BLOCKS
-do $$
- <<sample_block1>>
- declare
- enrolles integer :=0;
-begin
- select count (*)
- into enrolles
- from students;
-raise notice 'the number of enrolles is %', enrolles;
-end sample_block1 $$;
+
 --String Function : Repeat function
 --Select repeat('Hi',5) as repeat_greating
 --Select id, CONCAT(Repeat('0', 5-LENGTH(CAST(id as text))), id) From employee
@@ -242,3 +232,28 @@ DELETE * From employee where id = 1002
 
 --TRUNCATE
 TRUNCATE table employee;
+
+--BLOCKS (group multiple SQL statements together and execute procedural logic
+--(like variables, conditional loops, and error handling) directly on the database engine)
+do $$
+ <<sample_block1>>
+ declare
+ enrolles integer :=0;
+begin
+ select count (*)
+ into enrolles
+ from students;
+raise notice 'the number of enrolles is %', enrolles;
+end sample_block1 $$;
+
+--DO STATEMENT 
+do $$
+<<sample_block1>>
+declare
+enrollees integer :=0;
+begin
+select count(*)
+into enrollees
+from students;
+raise notice 'the number of enrolees is %';
+end sample_block1 $$;
