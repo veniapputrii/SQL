@@ -267,3 +267,9 @@ BEGIN
 SELECT sum(total) into sales from supermarket_sales
 IF sales < KPI then
 raise notice 'sales are below KPI : %', sales;
+ELSEIF sales = KPI THEN
+raise notice 'Sales reached the exact KPI : %', sales;
+ELSE
+raise notice 'Sales exceeds KPI : %', sales;
+END IF;
+END $$;
