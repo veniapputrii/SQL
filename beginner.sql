@@ -273,3 +273,14 @@ ELSE
 raise notice 'Sales exceeds KPI : %', sales;
 END IF;
 END $$;
+
+--LOOP Statement
+--Basic statement -> Executes the statements within its body until it reaches an EXIT STATEMENT
+do $$
+BEGIN
+ for counter in 1...10 loop
+  raise notice 'loop counter:%',counter;
+ end loop;
+end loop;
+
+--while loop -> to repeatedly execute a block of database statements as long as a specified condition remains true
