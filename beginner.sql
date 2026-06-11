@@ -283,4 +283,3 @@ BEGIN
  end loop;
 end loop;
 
---while loop -> to repeatedly execute a block of database statements as long as a specified condition remains true
